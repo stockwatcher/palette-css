@@ -1,0 +1,9 @@
+
+@import '_constants';
+
+.avatar-image {
+  width: $avatar-image-size;
+  height: $avatar-image-size;
+  border-radius: 50%;
+}
+

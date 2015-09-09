@@ -1,0 +1,55 @@
+
+@import 'colors';
+
+@mixin striped-n-helper($depth: 1, $color: 'grey', $shade: 'lighten-2') {
+  @if $depth <= 1 {
+    @if $color == 'white' or $color == 'black' or $color == 'transparent' {
+      background: #{$color};
+    } @else {
+      background: color($color, $shade);
+    }
+  } @else {
+    >:first-child {
+      @include striped-n-helper($depth - 1, $color, $shade);
+    }
+  }
+}
+
+/* striped-n
+ * Mixin for alternating background color at variable DOM node depth.
+ * Alternating of color happens to the children of the top level,
+ * but affects the nodes depth - 1 to that level.
+ * Example: A depth of 3 will alternate background colors on the <span>s below:
+ *
+ * @include striped-n('striped-3', 'red', 'base', 'blue', 'base', 3);
+ * <div class="striped-3">
+ *   <div>
+ *     <div>
+ *       <span>I'm Red</span>
+ *     </div>
+ *   </div>
+ *   <div>
+ *     <div>
+ *       <span>I'm Blue</span>
+ *     </div>
+ *   </div>
+ * </div>
+ */
+@mixin striped-n($class-name,
+                 $color1: 'grey', $shade1: 'lighten-2',
+                 $color2: 'grey', $shade2: 'lighten-3',
+                 $depth: 1) {
+  .#{$class-name} {
+    >:nth-child(2n + 1) {
+      @include striped-n-helper($depth, $color1, $shade1);
+    }
+    >:nth-child(2n) {
+      @include striped-n-helper($depth, $color2, $shade2);
+    }
+  }
+}
+
+@include striped-n('striped-1', 'grey', 'lighten-3', 'grey', 'lighten-2', 1);
+@include striped-n('striped-2', 'grey', 'lighten-3', 'grey', 'lighten-2', 2);
+@include striped-n('striped-3', 'grey', 'lighten-3', 'grey', 'lighten-2', 3);
+

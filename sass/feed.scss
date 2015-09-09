@@ -1,0 +1,36 @@
+
+@import '_constants';
+@import 'common';
+@import 'text';
+@import 'colors';
+
+$update-margin: margin('thick');
+
+.update {
+  @extend .z-depth-1;
+  background: color('grey', 'lighten-4');
+  margin: $update-margin;
+  padding: margin('fat');
+
+  .update-content {
+    min-height: $avatar-image-size;
+    margin-left: 76px;
+
+    .update-header {
+      min-height: 20px;
+      line-height: 1;
+
+      .left {
+        @extend .pull-left;
+        @extend .text-large;
+      }
+
+      .right {
+        @extend .pull-right;
+        @extend .text-muted;
+        @extend .text-small;
+      }
+    }
+  }
+}
+

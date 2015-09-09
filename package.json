@@ -1,0 +1,14 @@
+{
+  "name": "palette-css",
+  "description": "Palette.css - A Lightweight Material Design Toolkit",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stockwatcher/palette-css.git"
+  },
+  "dependencies": {
+    "express": "4.x",
+    "react": "*",
+    "materialize-css": "git://github.com/Dogfalo/materialize.git#v0.97.0"
+  }
+}

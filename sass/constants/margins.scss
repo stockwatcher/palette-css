@@ -1,0 +1,18 @@
+
+$margins: (
+  'slim': 1px,
+  'thin': 2px,
+  'normal': 4px,
+  'thick': 8px,
+  'fat': 12px,
+  'huge': 16px
+);
+
+@function margin($type) {
+  @if map-has-key($margins, $type) {
+    @return map-get($margins, $type);
+  }
+  /*@warn "Unknown `#{name}` in $margins.";*/
+  @return null;
+}
+
