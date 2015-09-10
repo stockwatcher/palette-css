@@ -1,6 +1,16 @@
 
 @import '_constants';
 
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
 .text-small {
   font-size: $text-small;
 }

@@ -24905,6 +24905,15 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   height: 64px;
   border-radius: 50%; }
 
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
 .text-small, .update .update-content .update-header .right {
   font-size: 10px; }
 
@@ -24922,6 +24931,15 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .pull-right, .update .update-content .update-header .right {
   float: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
 
 .text-small, .update .update-content .update-header .right {
   font-size: 10px; }

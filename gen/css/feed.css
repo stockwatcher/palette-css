@@ -4,6 +4,15 @@
 .pull-right, .update .update-content .update-header .right {
   float: right; }
 
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
 .text-small, .update .update-content .update-header .right {
   font-size: 10px; }
 
