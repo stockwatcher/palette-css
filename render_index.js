@@ -49,6 +49,19 @@ var Content = React.createClass({
             </div>
           </div>
         </div>
+
+        Labels
+        <div>
+          Badges
+          <div className="pl-badge">9</div>
+          <div className="pl-badge green">99</div>
+          <div className="pl-badge red">99+</div>
+        </div>
+        <div>
+          Tags
+          <div className="tag">Tag Content</div>
+          <div className="tag">Tag Content 2</div>
+        </div>
       </div>
     )
   }

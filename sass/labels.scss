@@ -1,0 +1,26 @@
+
+@import '_constants';
+@import 'text';
+@import 'colors';
+
+.pl-badge {
+  @extend .z-depth-1;
+  @extend .text-small;
+  color: white;
+  background: color('grey', 'darken-2');
+  margin: margin('thin');
+  padding: margin('thin') margin('normal');
+  border-radius: rounding('normal');
+  display: inline-block;
+}
+
+.tag {
+  @extend .z-depth-1;
+  @extend .text-normal;
+  background: color('grey', 'lighten-3');
+  margin: margin('normal');
+  padding: margin('thin') margin('thick');
+  border-radius: rounding('round');
+  display: inline-block;
+}
+

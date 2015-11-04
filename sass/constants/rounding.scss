@@ -1,0 +1,17 @@
+
+$rounding: (
+  'sharp': 2px,
+  'normal': 4px,
+  'smooth': 8px,
+  'round': 16px,
+  'oval': 50%
+);
+
+@function rounding($type) {
+  @if map-has-key($rounding, $type) {
+    @return map-get($rounding, $type);
+  }
+  /*@warn "Unknown `#{name}` in $rounding.";*/
+  @return null;
+}
+

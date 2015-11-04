@@ -4,9 +4,9 @@ Palette.css - A Lightweight Material Design Toolkit
 User Installation Instructions:
 
 ```
-app.use(express.static(__dirname + '/node_modules/palette-css'), {
+app.use(express.static(__dirname + '/node_modules/palette-css', {
   index: false
-});
+}));
 ```
 
 Dev Installation Instructions:
@@ -16,5 +16,5 @@ npm install
 sudo gem install listen
 sudo gem install sass
 
-sass --watch sass:gen/css
+sass --watch sass:pl-gen/css
 
