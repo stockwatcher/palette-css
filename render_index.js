@@ -67,7 +67,7 @@ var Content = React.createClass({
   }
 });
 
-React.render(
+ReactDOM.render(
   <div>
     <Content />
   </div>,
