@@ -2,6 +2,7 @@
   "name": "palette-css",
   "description": "Palette.css - A Lightweight Material Design Toolkit",
   "version": "0.2.2",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/stockwatcher/palette-css.git"
