@@ -4,4 +4,7 @@
 .pull-right {
   float: right; }
 
+.clickable {
+  cursor: pointer; }
+
 /*# sourceMappingURL=common.css.map */
