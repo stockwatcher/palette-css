@@ -1,7 +1,7 @@
 {
   "name": "palette-css",
   "description": "Palette.css - A Lightweight Material Design Toolkit",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "express": "4.x",
-    "react": "0.14.x",
-    "react-dom": "0.14.x",
+    "react": "15.x",
+    "react-dom": "15.x",
     "babel-core": "5.x",
-    "materialize-css": "git://github.com/Dogfalo/materialize.git#v0.97.6"
+    "materialize-css": "git://github.com/Dogfalo/materialize.git#v0.97.7"
   }
 }
