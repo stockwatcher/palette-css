@@ -12,6 +12,6 @@
     "react": "15.x",
     "react-dom": "15.x",
     "babel-core": "5.x",
-    "materialize-css": "git://github.com/Dogfalo/materialize.git#v0.97.7"
+    "materialize-css": "0.99.x"
   }
 }
